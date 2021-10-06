@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+
+  maubot:
+    image: dock.mau.dev/maubot/maubot
+    container_name: maubot
+    restart: unless-stopped
+    ports:
+      - 29316:29316   
+    volumes:
+      - ./data/:/data
